@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(to bottom,#f2f2f2,#f9f9f9,#69696984,#33333378);
+}
+.traning-sec{
+    width: 100%;
+    /* height: 100vh; */
+    
+    /* padding-bottom: 3rem; */
+    padding:0 3.1rem ;
+    /* margin-top: 2rem; */
+    
+}
+.training-sec h1{
+    text-align: center;
+    padding:1.25rem 0;
+    /* width: 73.125rem; */
+    margin: auto;
+    /* border: 1px solid red; */
+
+}
+.container{
+    
+    width: 88%;
+    padding: 0 6%;
+    overflow-x: hidden;
+    
+    /* align-items: center; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.training-items{
+    
+    flex-basis: 22%;
+    /* background: yellow; */
+    margin: 0.625rem 0;
+    box-shadow: 0 0 0.625rem #000000;
+    text-align: center;
+    /* padding:1.25rem 0 ; */
+    border-radius: 0.5rem;
+    
+    
+}
+.training-items img{
+    border-radius: 0.5rem;
+    filter: grayscale(100%);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.training-items h3{
+    padding: 0.625rem 0;
+
+}
+.training-items p{
+    font-size: 1rem;
+    padding: 0.625rem;
+}
+.training-items button{
+    border:#333 solid 1px ;
+    border-radius: 0.5rem;
+    background-color: #33333354;
+    padding: 3px;
+    margin:0.625rem;
+}
+.training-items button:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: #c4c4c4;
+}
+.training-items:hover{
+    
+    background-image: linear-gradient(to bottom,#f9f9f9,#6969695d,#33333357);
+    transform: scale(1.03);
+    transition-timing-function: ease-in-out;
+}
+.training-items:hover img{
+    filter: grayscale(0%) contrast(100%);
+    
+}
+@media only screen and (min-width:200px) and (max-width:769px){
+    .container{
+        width: 90%;
+        flex-direction: column;
+    }
+    .training-tems{
+        margin: 0.625rem;
+    }
+}
